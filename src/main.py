@@ -83,7 +83,7 @@ if __name__ == "__main__":
     history_mlp = train_and_evaluate(mlp_model, train_dl, test_dl, epochs=15, model_name="MLP Clásico")
 
     print("\n>>> RED KOLMOGOROV-ARNOLD (KAN) <<<")
-    history_kan = train_and_evaluate(kan_model, train_dl, test_dl, epochs=15, lr=0.01, model_name="Red KAN")
+    history_kan = train_and_evaluate(kan_model, train_dl, test_dl, epochs=15, model_name="Red KAN")
 
     # 4. Resumen 
     print(f"\n{'='*50}")
